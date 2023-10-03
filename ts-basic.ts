@@ -20,11 +20,13 @@ const validChecker: Record<Valid, string> = {
   false: "false",
 };
 
-const ids = {
+const ids: Record<number, string> = {
   10: "ten",
   20: "twenty",
   30: "thirty",
 };
+
+ids[40] = "fourty";
 
 console.log(ids);
 
