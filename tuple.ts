@@ -19,11 +19,11 @@ function simpleState(initial: string): [() => string, (v: string) => void] {
   ];
 }
 
-const [str1getter, str1setter] = simpleState("hello");
-const [str2getter, str2setter] = simpleState("jack");
-console.log(str2getter());
-console.log(str1getter());
-str1setter("goodbye");
-console.log(str1getter());
-console.log(str2getter());
+// const [str1getter, str1setter] = simpleState("hello");
+// const [str2getter, str2setter] = simpleState("jack");
+// console.log(str2getter());
+// console.log(str1getter());
+// str1setter("goodbye");
+// console.log(str1getter());
+// console.log(str2getter());
 
