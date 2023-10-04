@@ -10,8 +10,11 @@ interface UserOptions {
   age?: number;
   email?: string;
 }
+// Required Utility Type
+// changing all optional field into required
+type RequiredUser = Required<UserOptions>;
 
-//with partial
+//with partial - making everything optional
 type UserOption = Partial<User>;
 const mergeUser = (user: User, userOptions: UserOption): User => {
   return { ...user, ...userOptions };
